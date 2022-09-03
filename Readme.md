@@ -54,3 +54,19 @@ Local Git Workflow:
     
     Write code -> Stage changes -> Commit changes  -> Push changes  -> Create PR
                   [ git add ]      [ git commit ]      [ git push ]
+
+Git Branching:
+
+Check the current branch :
+
+    git branch
+
+Creating a new branch:
+
+    git checkout -b feature-branch    #Switched to a new branch 'feature-branch'
+
+Switch from one branch to other branch:  
+star indicates current branch
+
+    git checkout master
+    git checkout feature-branch
