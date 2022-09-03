@@ -61,7 +61,7 @@ Check the current branch :
 
     git branch
 
-Creating a new branch:
+Creating a new branch:    [ new branch name is feature-branch]
 
     git checkout -b feature-branch    #Switched to a new branch 'feature-branch'
 
@@ -70,3 +70,13 @@ star indicates current branch
 
     git checkout master
     git checkout feature-branch
+
+Pull:  
+The Latest updates to master.....fecth to local repo
+
+    git pull                 [or]
+    git pull origin master
+
+Delete branch:
+    
+    git branch -d feature-branch
