@@ -5,7 +5,6 @@ What is version control?
 What is difference git and github?
 	git    : Its a tool that track the code to the code
 	github : Its is a websites where you can host all your repositories
-
 Git Commands:
 	clone  : Bring to local system
 	add    : track your files and changes in git
