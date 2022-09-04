@@ -80,3 +80,6 @@ The Latest updates to master.....fecth to local repo
 Delete branch:
     
     git branch -d feature-branch
+
+Merge Conflict:
+1)Bye
