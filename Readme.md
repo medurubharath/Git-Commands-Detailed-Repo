@@ -82,4 +82,6 @@ Delete branch:
     git branch -d feature-branch
 
 Merge Conflict:
+
 1)Hello
+1)Bye
