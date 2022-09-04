@@ -109,3 +109,16 @@ How to fix conflict:
     git status     # Newly created branch
     git commit -am "local Master and branch changes with conflit fix"
     git push
+
+
+Undo the file changes:
+
+    git reset filename     [or]
+    git reset   
+
+Undo the commit:
+
+    git add .
+    git commit -m "message"
+    git status    # nothing to commit
+    git reset HEAD~1    #undo commit
