@@ -81,7 +81,31 @@ Delete branch:
     
     git branch -d feature-branch
 
-Merge Conflict:
+Merge Conflict:   
+  Your local branch is not up-to-date with master
 
-1)Hello
-1)Bye
+Example:
+
+    From master create a branch "quick-test-branch"
+	      git checkout -b quick-test-branch
+          git status
+	 Make some changes in readme file
+	      git diff   
+	      git commit -am "Message"
+
+    From branch to go to master
+          git checkout master
+	 Make some changes in readme file     # previous branch will be there beacuse its not merged
+	      git branch
+	      git checkout quick-test-branch  # please commit your changes or stash them before you switch branches.Aborting [ in master line 2 chaned with <p>Hi</p> , in branch also <p>Welcome</p> ]
+	      git status
+	      git commit -am "makes changes in readme file"
+	      git checkout quick-test-branch
+	      git dif master
+	      git merge master  # CONFLICT (content): Merge conflict in Readme.md
+    
+How to fix conflict:
+    
+    git status     # Newly created branch
+    git commit -am "local Master and branch changes with conflit fix"
+    git push
