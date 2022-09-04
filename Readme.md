@@ -1,12 +1,12 @@
-What is Git?    
+What is Git ?    
 
 		Free and open source version control system 
 
-What is version control?   
+What is version control ?   
 
 		The management of changes to document,computer programs,large websites and other collection of information
 
-What is difference git and github?      
+What is difference git and github ?      
 
 		git    : Its a tool that track the code changes
 		github : Its a websites where you can host all your repositories in remote
@@ -80,3 +80,6 @@ The Latest updates to master.....fecth to local repo
 Delete branch:
     
     git branch -d feature-branch
+
+Merge Conflict:
+1)Hello
