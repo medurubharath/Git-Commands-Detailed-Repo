@@ -12,6 +12,7 @@ What is difference git and github ?
 		github : Its a websites where you can host all your repositories in remote
 
 Source Code Management Tools(SCMT):
+
 	GitHub
 	GitLab
 	BitBucket
@@ -33,13 +34,13 @@ Clone:
 
       git clone URL
 
-Note:  
 Untracked : Created a new file but not added to track it. Tracking can be done by using git add command
     
     git status
+   
 Add:  Two ways   
 	
-	git add .          # add multiple files  
+    git add .          # add multiple files  
     git add filename   #single file with filename
  
 Note :   
@@ -51,6 +52,7 @@ If cloned using http url use before commit
 Commit :
 
     git commit -m "Content of commit message" 
+    
 Push:
     
     git push
