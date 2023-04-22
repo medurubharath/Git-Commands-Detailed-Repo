@@ -11,6 +11,15 @@ What is difference git and github ?
 		git    : Its a tool that track the code changes
 		github : Its a websites where you can host all your repositories in remote
 
+Source Code Management Tools(SCMT):
+	GitHub
+	GitLab
+	BitBucket
+	SVN
+	TFS
+	CVS
+	Azure Repos
+
 Git Commands:   
  
 	clone  : Bring to local system/ENV  
