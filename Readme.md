@@ -57,6 +57,32 @@ Push:
     
     git push
 
+git clean:
+
+It will remove the files
+	
+	git clean -n   # will display the file that can be remove
+	git clean -f   # it will remove the files
+	git clean -f file_name1 file_name2 ...
+		
+git reset:
+
+Moving from staging-area to working-area.It will bring back to working-area from staging-area
+			 
+	git reset
+	git reset file_name.java
+	
+git revert:
+		
+It will revert the last commit
+
+It will delete the new files which we are created and exiting file with new changes can remove
+
+It will delete in local repository only
+			
+	git revert cd80c1c4c2
+
+
 Github Workflow:
 
     Write code -> Commit changes  -> Create PR
