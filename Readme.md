@@ -176,3 +176,17 @@ cherry-pick: We can merge based on required commit-id
 		dev-branch DC1 DC2 DC3 DC4    # get the commit-id with the help of  "git log" command   DC3 -> ea14536g6
 		go to master and run 
 			git cherry-pick ea14536g6   ( ea14536g6 -> DC3)
+			
+Rebase: Using rebase all the commits and going to integrate to master. After integration we can individual commit-id details. Below DC means commit-ids
+	
+	merge
+		 master single commit(DC)
+			| merge
+			v
+		dev-branch DC1 DC2 Dc3
+
+	merge
+		 master DC1 DC2 Dc2
+			| rebase
+			v
+		dev-branch DC1 DC2 Dc2
