@@ -193,12 +193,12 @@ Rebase: Using rebase all the commits and going to integrate to master. After int
 		
 Difference between git pull and git merge:
 
-                     Remote Repo ---------------
+                Remote Repo --------------->
 			|			|
 	        	| git fetch 		|
 		        v			|
 		    Local Repo			|  git pull
 			|			|
 			| git merge		|
-			v			|
+			v			v
 		    Working Repo <--------------
