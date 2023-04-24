@@ -190,3 +190,15 @@ Rebase: Using rebase all the commits and going to integrate to master. After int
 			| rebase
 			v
 		dev-branch DC1 DC2 Dc2
+		
+Difference between git pull and git merge:
+
+                     Remote Repo ---------------
+			|			|
+	        	| git fetch 		|
+		        v			|
+		    Local Repo			|  git pull
+			|			|
+			| git merge		|
+			v			|
+		    Working Repo <--------------
