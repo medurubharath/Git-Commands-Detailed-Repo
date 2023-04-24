@@ -34,7 +34,7 @@ Clone:
 
       git clone URL
 
-Untracked : Created a new file but not added to track it. Tracking can be done by using git add command
+Untracked :  Created a new file but not added to track it. Tracking can be done by using git add command.
     
     git status
    
@@ -43,8 +43,7 @@ Add:  Two ways
     git add .          # add multiple files  
     git add filename   #single file with filename
  
-Note :   
-If cloned using http url use before commit
+Note :    If cloned using http url use before commit
 
     git config --global user.email "you@example.com"  
     git config --global user.name "Your Name"   
@@ -57,29 +56,18 @@ Push:
     
     git push
 
-git clean:
-
-It will remove the files
+git clean: It will remove the files
 	
-	git clean -n   # will display the file that can be remove
 	git clean -f   # it will remove the files
 	git clean -f file_name1 file_name2 ...
 		
-git reset:
-
-Moving from staging-area to working-area.It will bring back to working-area from staging-area
+git reset: It will bring back to working-area(Untracked) from staging-area(tracked)
 			 
 	git reset
 	git reset file_name.java
 	
-git revert:
-		
-It will revert the last commit
+git revert: It will revert the last commit. First revert and push code.
 
-It will delete the new files which we are created and exiting file with new changes can remove
-
-It will delete in local repository only
-			
 	git revert cd80c1c4c2
 
 
@@ -92,34 +80,26 @@ Local Git Workflow:
     Write code -> Stage changes -> Commit changes  -> Push changes  -> Create PR
                   [ git add ]      [ git commit ]      [ git push ]
 
-Git Branching:
+Git Branching: Branch can be created by developers for development.  Star indicates current branch.
+		
+		git branch                   	     # used to check  the branch
+		git branch <branch_name>    	     # used to create the branch  ex: git branch development
+		git branch -d <branch_name> 	     # used to delete the branch  ex: git branch -d development
+		git branch -m <old_name> <new_name>  # used to rename any branch  branch ex: git branch development dev-branch   if we are master we can do rename using this 
+		git branch -m <new_name>             # used to rename the current branch ex: git branch dev-branch if can rename for current branch
+		git checkout <branch_name>           # switch from one to other branch ex: git branch dev-branch
+		git checkout -b feature-branch       # Create amnd Switched to a new branch 'feature-branch'
 
-Check the current branch :
 
-    git branch
 
-Creating a new branch:    [ new branch name is feature-branch]
 
-    git checkout -b feature-branch    #Switched to a new branch 'feature-branch'
-
-Switch from one branch to other branch:  
-star indicates current branch
-
-    git checkout master
-    git checkout feature-branch
-
-Pull:  
-The Latest updates to master.....fecth to local repo
+Pull:  The Latest updates to master.....fecth to local repo
 
     git pull                 [or]
     git pull origin master
 
-Delete branch:
-    
-    git branch -d feature-branch
 
-Merge Conflict:   
-  Your local branch is not up-to-date with master
+Merge Conflict:   Your local branch is not up-to-date with master
 
 Example:
 
@@ -148,14 +128,12 @@ How to fix conflict:
     git push
 
 
-Undo the file changes:
+Tag: It is immutable. After the prod deployment tag will create. It will create zip and tar files. We cant delete the tag in remote repository
 
-    git reset filename     [or]
-    git reset   
-
-Undo the commit:
-
-    git add .
-    git commit -m "message"
-    git status    # nothing to commit
-    git reset HEAD~1    #undo commit
+	Branch					Tag
+	------					----
+	git branch 				git tag
+	git branch branch_name			git tag tag_name   (tag_name ->application_namev1.0.0)
+	git branch -d branch_name		git tag -d tag_name
+	git push an --all			git push --tags
+	git push an branch_name			git push an tag_name (an -> alise name)
