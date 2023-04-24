@@ -137,3 +137,33 @@ Tag: It is immutable. After the prod deployment tag will create. It will create 
 	git branch -d branch_name		git tag -d tag_name
 	git push an --all			git push --tags
 	git push an branch_name			git push an tag_name (an -> alise name)
+
+
+stash:  The code which is in working-area(untrackedL) will keep in temporary area. Until drop this save stash will be present
+save: Will save the changes
+	
+	git stash                 [or] 
+	git stash save "message"
+list: git stash list will show how many back-up are there
+	
+	git stash list	 # how many back-up are there
+	Example:
+		stash{0}
+		stash{1}
+		stash{2}
+apply: git stash apply will take recent one
+
+	git stash apply stash_name
+	Example:
+		git stash apply stash{1}
+drop: git stash drop will take recent one
+	
+	git stash drop stash_name
+	Example:
+		git stash drop stash{1}
+	
+pop: git stash pop will take recent one
+	
+	git stash pop stash_name
+	Example:
+		git stash pop stash{1}
